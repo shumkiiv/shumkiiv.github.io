@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniCalen - календарь и дела для Android в одном приложении</title>
+  <meta name="description" content="UniCalen - Android-приложение календаря и дел: объединяет календари Google, Яндекса, Mail.ru и Bitrix24, Google Tasks, напоминания и виджеты рабочего стола.">
+  <link rel="icon" type="image/png" href="../assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('lang');
+        if (stored === 'en') {
+          location.replace('../');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">
+        <img src="../assets/favicon-64.png" alt="Логотип UniCalen">
+        UniCalen
+      </a>
+      <nav class="site-nav">
+        <a href="#features">Возможности</a>
+        <a href="#download">Скачать</a>
+        <a href="#support">Поддержка</a>
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="../" onclick="try{localStorage.setItem('lang','en')}catch(e){}">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="app-icon" src="../assets/icon-512.png" alt="Иконка UniCalen">
+        <h1>UniCalen - все календари и дела<br>в одном Android-приложении</h1>
+        <p class="tagline">
+          UniCalen - это календарь и менеджер дел для Android. Приложение подключает
+          Google Календарь и Google Tasks, показывает календари, события и задачи,
+          позволяет создавать и изменять события, а также создавать, редактировать
+          и завершать дела в одном месте.
+        </p>
+        <p class="tagline">
+          События из Google, Яндекса, Mail.ru и Bitrix24 собираются в единую ленту,
+          напоминания не дают забыть о важном, а виджеты выводят расписание прямо
+          на рабочий стол Android.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#download">Скачать приложение</a>
+          <a class="btn btn-secondary" href="privacy.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Что умеет UniCalen</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Единая лента всех календарей</h3>
+            <p>
+              Подключайте Google (прямой вход, системный календарь Android или iCal-ссылка),
+              Яндекс и Mail.ru по CalDAV, а также Bitrix24. События отображаются вместе,
+              с фильтрами, цветами и настройкой видимости каждого календаря.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Шкала дня и свободные окна</h3>
+            <p>
+              Полный вид суток от 00:00 до 24:00 показывает расписание по часам,
+              подсвечивает свободные интервалы и позволяет создавать и переносить
+              события касанием или перетаскиванием.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Дела и списки дел</h3>
+            <p>
+              Google Tasks и задачи Яндекс CalDAV живут на отдельной вкладке: несколько
+              списков, фильтры, создание, редактирование, выполнение и удаление дел
+              прямо в приложении.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Напоминания под ваши планы</h3>
+            <p>
+              Несколько напоминаний на событие, отложить на быстрый или произвольный
+              интервал, ежедневная сводка планов и тихий режим, когда нужно
+              сосредоточиться.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Виджеты рабочего стола</h3>
+            <p>
+              Календарь, ближайшие события, дела и комбинированные виджеты держат день
+              перед глазами, не открывая приложение.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Локальность и прозрачность</h3>
+            <p>
+              Ваши данные остаются на устройстве. UniCalen общается только с сервисами,
+              которые вы подключили, работает без Google Play Services, а встроенный
+              журнал объясняет каждую синхронизацию. Подробности - в
+              <a href="privacy.html">политике конфиденциальности</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <div class="container">
+        <h2>Скачать</h2>
+        <p>
+          UniCalen сейчас в открытом бета-тесте в RuStore и не требует Google Play
+          Services. Релиз в Google Play планируется после беты.
+        </p>
+        <div class="button-row">
+          <span class="btn btn-primary">RuStore<span class="btn-note">Открытая бета</span></span>
+          <span class="btn btn-secondary">Google Play<span class="btn-note">Скоро</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support">
+      <div class="container">
+        <h2>Поддержка</h2>
+        <p>
+          Вопросы, идеи или проблемы с синхронизацией? Пишите на
+          <a href="mailto:shumkiiv@gmail.com">shumkiiv@gmail.com</a>.
+        </p>
+        <p>
+          Совет: журнал диагностики в приложении можно отправить через системное меню
+          "Поделиться" - это очень помогает при разборе проблем с синхронизацией.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 UniCalen
+      <a href="privacy.html">Конфиденциальность</a>
+      <a href="mailto:shumkiiv@gmail.com">Контакт</a>
+    </div>
+  </footer>
+</body>
+</html>
