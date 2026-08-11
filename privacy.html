@@ -28,7 +28,7 @@
 
   <main class="legal">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 7, 2026</p>
+    <p class="updated">Last updated: August 11, 2026</p>
 
     <p>
       This Privacy Policy describes how the UniCalen Android application ("UniCalen", "the app")
@@ -81,7 +81,25 @@
       <a href="https://myaccount.google.com/permissions">Google account permissions</a>.
     </p>
 
-    <h2>4. Other connected services</h2>
+    <h2>4. Security safeguards</h2>
+    <p>
+      UniCalen protects sensitive data with technical safeguards appropriate to the data it
+      handles. OAuth access and refresh tokens, CalDAV passwords and Bitrix24 webhook credentials
+      are encrypted at rest in Android EncryptedSharedPreferences. The storage uses AES-256-GCM
+      encryption for values and an AES-256-GCM master key held by Android Keystore; preference
+      keys use AES-256-SIV encryption. Calendar, event and task data is stored in the app's
+      private Android storage, which is not accessible to other apps under normal Android app
+      sandboxing.
+    </p>
+    <p>
+      Google OAuth, Google Calendar API and Google Tasks API communications use HTTPS with TLS.
+      Authenticated CalDAV and Bitrix24 connections also use HTTPS with TLS. Sensitive credentials
+      are sent only to the service you choose to connect and only to authenticate or complete your
+      requested calendar or task operation. UniCalen does not operate a server that receives,
+      stores or processes your Google user data, calendar data, tasks, OAuth tokens or passwords.
+    </p>
+
+    <h2>5. Other connected services</h2>
     <p>
       Depending on the sources you connect, UniCalen communicates directly from your device
       with the corresponding service: Google (Calendar API, Tasks API or iCal links), Yandex
@@ -90,7 +108,7 @@
       privacy policy applies to the data it processes.
     </p>
 
-    <h2>5. Diagnostics and crash reports</h2>
+    <h2>6. Diagnostics and crash reports</h2>
     <p>
       UniCalen keeps a local diagnostics log and locally stored crash reports on your device
       to help troubleshoot synchronization, reminders and widgets. This information leaves
@@ -99,7 +117,7 @@
       advertising SDKs or automatic crash-reporting services.
     </p>
 
-    <h2>6. Data sharing</h2>
+    <h2>7. Data sharing</h2>
     <p>
       The developer does not receive, collect, sell or share your personal data. Information
       is exchanged only between your device and the calendar services you explicitly connect.
@@ -107,7 +125,7 @@
       request.
     </p>
 
-    <h2>7. Data retention and deletion</h2>
+    <h2>8. Data retention and deletion</h2>
     <p>
       All app data resides on your device. You can delete individual events and tasks in the
       app, disconnect an account in the app settings, or uninstall the app to remove all local
@@ -115,19 +133,19 @@
       permissions) stops any further synchronization.
     </p>
 
-    <h2>8. Children</h2>
+    <h2>9. Children</h2>
     <p>
       UniCalen is not directed at children and does not knowingly collect personal
       information from children.
     </p>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>
       If this Privacy Policy changes, the updated version will be published at this URL with
       a revised "Last updated" date.
     </p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>
       For questions about this policy or the app, contact:
       <a href="mailto:shumkiiv@gmail.com">shumkiiv@gmail.com</a>.
